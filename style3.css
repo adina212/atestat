@@ -1,0 +1,70 @@
+body {
+    background-color: #ecdaf4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(pozaperfecta.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quiz-container {
+    background-color: white;
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: fit-content;
+    height: 400px;
+    min-width: 400px;
+    padding: 2rem;
+}
+
+.quiz-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+ol li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ol li label {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 1.5rem 7rem;
+    background-color: #ffc0cb;
+    color: white;
+    border: none;
+    display: block;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: lightpink;
+    scale: 110%;
+    transition: ease .2s;
+}

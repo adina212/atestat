@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+body{
+    background-color:black;
+}
+
+header{
+    z-index:999;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.5s ease;
+}
+section .test{
+    color:#f2e5d9;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ .logo{
+    color:aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #ebd3d3;
+    width: 0%;
+    height:3px;
+    bottom: 0;
+    left: 0;
+    transition:0.3s ease;
+
+}
+ .navigation-items a:hover:before{
+    width:100%;
+} 
+ .navigation-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+ .navigation-items a{
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+   
+}
+
+ .navigation-items a:hover{
+    text-decoration: none;
+}
+
+section{
+    padding:350px 200px;
+}
+
+.home video{
+    z-index:000;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+
+}
+
+.home .content{
+    z-index:888;
+    color: #fff;
+    width: 100%;
+    margin-top: 90px;
+    position:relative;
+    text-align:center;
+    background-color: lightpink;
+    border-radius: 10px;
+    opacity:.8;
+
+}
+
+
+.home .content a{
+    font-size:4em;
+    letter-spacing: 5px;
+    padding:15px 35px;
+    margin-bottom: 40px;
+    transition:0.5s;
+    
+}
+.home .media-icons{
+z-index:888;
+position:absolute;
+right: 30px;
+display: flex;
+flex-direction: column;
+transition: 0.5 ease;
+top: 50em;
+
+
+}
+
+.home .media-icons a{
+    color:aliceblue;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+.home .content a:hover{
+letter-spacing: 0.25em;
+opacity: 1.0;
+color:aliceblue;
+}
+/*
+.home .content a::before{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff8093;
+    z-index: -1;
+    transition:0.8s;
+ border-radius: 50% 50% 0 0;
+}
+.home .content a:hover::before{
+height:180%;
+}
+*/
+
+
+
